@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Productos - Make Up Wapa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Administración de Productos</h2>
+        <div class="mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar productos...">
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="productosTable">
+                <tr>
+                    <td>1</td>
+                    <td>Pintalabios Mate</td>
+                    <td>Color Rojo intenso y larga duración.</td>
+                    <td>$15.00</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Editar</button>
+                        <button class="btn btn-sm btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Base de Maquillaje</td>
+                    <td>Cobertura perfecta y natural.</td>
+                    <td>$25.00</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Editar</button>
+                        <button class="btn btn-sm btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Agregar Nuevo Producto</h3>
+        <form id="agregarProductoForm">
+            <div class="mb-3">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="descripcion">Descripción</label>
+                <textarea class="form-control" id="descripcion" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="precio">Precio</label>
+                <input type="number" class="form-control" id="precio" required>
+            </div>
+            <div class="mb-3">
+                <label for="imagen">Imagen</label>
+                <input type="file" class="form-control" id="imagen" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-success">Guardar</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Aquí puedes agregar el código JavaScript para cargar, filtrar y agregar productos
+    </script>
+</body>
+</html>

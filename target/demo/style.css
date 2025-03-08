@@ -1,0 +1,35 @@
+/* Estilos generales para la barra de navegación */
+.navbar {
+    background-color: #222; /* Color de fondo oscuro */
+}
+
+.navbar-nav .nav-link {
+    color: #eee; /* Color de texto claro */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Color de texto al pasar el ratón */
+}
+
+/* Eliminar el subrayado de los enlaces */
+.navbar-nav .nav-link {
+    text-decoration: none;
+}
+
+/* Ajustes para el logotipo (opcional) */
+.navbar-brand {
+    color: #eee; /* Color del logotipo */
+    font-size: 20px; /* Tamaño del logotipo */
+}
+
+.navbar-brand:hover {
+    color: #fff; /* Color del logotipo al pasar el ratón */
+}
+
+/* Eliminar el borde del botón de colapso en pantallas pequeñas */
+.navbar-toggler {
+    border: none;
+}
